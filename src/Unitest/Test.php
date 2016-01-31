@@ -1,12 +1,22 @@
 <?php
-namespace Unitest;
-
 /**
+ * Unitest (PHP Unit Test)
  *
- * @author franckysolo
- *        
+ * @version 1.0.0
+ * @author franckysolo <franckysolo@gmail.com>
+ */
+namespace Unitest;
+use Unitest\Report\Result;
+/**
+ * @category PHP Unit Test - Simple Unit Test for PHP
+ * @version 1.0.0
+ * @author franckysolo <franckysolo@gmail.com>
+ * @license http://creativecommons.org/licenses/by-sa/3.0/  CC BY-SA 3.0
+ * @package Unitest
+ * @filesource  Test.php
  */
 abstract class Test {
+    
     /**
      * The Result of test case
      *

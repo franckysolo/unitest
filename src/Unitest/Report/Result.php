@@ -59,6 +59,14 @@ class Result
     protected $exception;
     
     /**
+     *
+     * @param string $name
+     */
+    public function __construct($name) {
+        $this->name = $name;
+    }
+    
+    /**
      * Add an assertion to the test
      * 
      * @param string $label
@@ -120,6 +128,7 @@ class Result
      */
     public function setException(\Exception $exception) {
         $this->exception = $exception;
+        $this->failed++;
         return $this;
     }
     
@@ -181,4 +190,14 @@ class Result
     public function getAssertions() {
         return $this->assertions;
     }
+
+    
+    /**
+     * 
+     * @return number
+     */
+    public function getFailed() {
+        return $this->failed;
+    }
+ 
 }

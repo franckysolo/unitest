@@ -1,0 +1,30 @@
+<?php
+/** 
+ * @category PHP Unit Test - Simple Unit Test for PHP
+ * @version 1.0.0
+ * @author franckysolo <franckysolo@gmail.com>
+ * @license http://creativecommons.org/licenses/by-sa/3.0/  CC BY-SA 3.0
+ * @package UnitTest
+ * @filesource  table.phtml
+ */
+?>
+<div class="table-responsive">
+<table class="table table-bordered table-striped table-condensed">
+    <tr>
+        <th><?php echo $this->translate('Test total count')?></th>
+        <th><?php echo $this->translate('Success')?></th>
+        <th><?php echo $this->translate('Failed')?></th>
+        <th><?php echo $this->translate('Execution time')?></th>
+        <th><?php echo $this->translate('Memory used')?></th>
+        <th><?php echo $this->translate('Peak memory usage')?></th>
+    </tr>
+    <tr>
+        <td><?php echo $t = $this->filter($this->getTotalCount());?></td>
+        <td><?php echo $s = $this->filter($this->getSuccessCount());?></td>
+        <td><?php echo ($t - $s);?></td>
+        <td><?php echo round(xdebug_time_index(), 6);?> s</td>
+        <td><?php echo xdebug_memory_usage() / 1000; ?> kb</td>
+        <td><?php echo xdebug_peak_memory_usage() / 1000;?> kb</td>
+    </tr>
+</table>
+</div>

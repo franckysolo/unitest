@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: UnitTest for PHP\n"
-"POT-Creation-Date: 2016-01-28 18:41+0100\n"
-"PO-Revision-Date: 2016-01-28 18:47+0100\n"
+"POT-Creation-Date: 2016-02-01 00:43+0100\n"
+"PO-Revision-Date: 2016-02-01 00:43+0100\n"
 "Last-Translator: franckysolo <franckysolo@gmail.com>\n"
 "Language-Team: franckysolo <franckysolo@gmail.com>\n"
 "Language: en_US\n"
@@ -11,38 +11,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-KeywordsList: translate\n"
-"X-Poedit-Basepath: /home/franckysolo/workspace/DevZone\n"
+"X-Poedit-Basepath: /home/franckysolo/git/unitest/tests\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: unitest\n"
+"X-Poedit-SearchPath-0: _reporter/views\n"
+"X-Poedit-SearchPath-1: _reporter/report\n"
 
-#: unitest/src/UnitTest/Report.phtml:3 unitest/src/UnitTest/Report.phtml:17
-msgid "UnitTest for PHP"
-msgstr "UnitTest for PHP"
-
-#: unitest/src/UnitTest/Report.phtml:12
-msgid "Toggle navigation"
-msgstr "Toggle navigation"
-
-#: unitest/src/UnitTest/Report.phtml:24
+#: _reporter/views/table.phtml:14
 msgid "Test total count"
 msgstr "Test total count"
 
-#: unitest/src/UnitTest/Report.phtml:28
+#: _reporter/views/table.phtml:15
 msgid "Success"
 msgstr "Success"
 
-#: unitest/src/UnitTest/Report.phtml:32
+#: _reporter/views/table.phtml:16
 msgid "Failed"
 msgstr "Failed"
 
-#: unitest/src/UnitTest/Report.phtml:36
+#: _reporter/views/table.phtml:17
 msgid "Execution time"
 msgstr "Execution time"
 
-#: unitest/src/UnitTest/Report.phtml:40
+#: _reporter/views/table.phtml:18
 msgid "Memory used"
 msgstr "Memory used"
 
-#: unitest/src/UnitTest/Report.phtml:44
+#: _reporter/views/table.phtml:19
 msgid "Peak memory usage"
 msgstr "Peak memory usage"
+
+#: _reporter/views/menu.phtml:16
+msgid "Toggle navigation"
+msgstr "Toggle navigation"
+
+#: _reporter/views/menu.phtml:22
+msgid "UnitTest for PHP"
+msgstr "UnitTest for PHP"
+
+#: _reporter/report/result.phtml:5
+msgid "Test Class name"
+msgstr "Test Class name"
+
+#: _reporter/report/result.phtml:8
+msgid "Output"
+msgstr "Output"
+
+#: _reporter/report/result.phtml:10
+msgid "No output"
+msgstr "No output"
+
+#: _reporter/report/result.phtml:12
+msgid "Assertions"
+msgstr "Assertions"
+
+#: _reporter/report/result.phtml:15
+msgid "Status"
+msgstr "Status"
+
+#: _reporter/report/result.phtml:16
+msgid "Assertion"
+msgstr "Assertion"
+
+#: _reporter/report/result.phtml:17 _reporter/report/result.phtml:38
+msgid "File"
+msgstr "File"
+
+#: _reporter/report/result.phtml:18 _reporter/report/result.phtml:39
+msgid "Line"
+msgstr "Line"
+
+#: _reporter/report/result.phtml:19
+msgid "Execution"
+msgstr "Execution"
+
+#: _reporter/report/result.phtml:25
+msgid "No assertion"
+msgstr "No assertion"
+
+#: _reporter/report/result.phtml:34
+msgid "Exception"
+msgstr "Exception"
+
+#: _reporter/report/result.phtml:40
+msgid "Code"
+msgstr "Code"

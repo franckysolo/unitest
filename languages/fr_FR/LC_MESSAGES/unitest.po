@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: UnitTest for PHP\n"
-"POT-Creation-Date: 2016-01-28 18:52+0100\n"
-"PO-Revision-Date: 2016-01-28 18:55+0100\n"
+"POT-Creation-Date: 2016-02-01 00:38+0100\n"
+"PO-Revision-Date: 2016-02-01 00:40+0100\n"
 "Last-Translator: franckysolo <franckysolo@gmail.com>\n"
 "Language-Team: franckysolo <franckysolo@gmail.com>\n"
 "Language: fr_FR\n"
@@ -11,38 +11,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-KeywordsList: translate;gettext\n"
-"X-Poedit-Basepath: /home/franckysolo/workspace/DevZone\n"
+"X-Poedit-Basepath: /home/franckysolo/git/unitest/tests\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: unitest\n"
+"X-Poedit-SearchPath-0: _reporter/views\n"
+"X-Poedit-SearchPath-1: _reporter/report\n"
 
-#: unitest/src/UnitTest/Report.phtml:3 unitest/src/UnitTest/Report.phtml:17
-msgid "UnitTest for PHP"
-msgstr "Test unitaire pour PHP"
-
-#: unitest/src/UnitTest/Report.phtml:12
-msgid "Toggle navigation"
-msgstr "Basculer le menu"
-
-#: unitest/src/UnitTest/Report.phtml:24
+#: _reporter/views/table.phtml:14
 msgid "Test total count"
 msgstr "Nombre total de test"
 
-#: unitest/src/UnitTest/Report.phtml:28
+#: _reporter/views/table.phtml:15
 msgid "Success"
 msgstr "Succès"
 
-#: unitest/src/UnitTest/Report.phtml:32
+#: _reporter/views/table.phtml:16
 msgid "Failed"
 msgstr "Echecs"
 
-#: unitest/src/UnitTest/Report.phtml:36
+#: _reporter/views/table.phtml:17
 msgid "Execution time"
 msgstr "Temps d'éxécution"
 
-#: unitest/src/UnitTest/Report.phtml:40
+#: _reporter/views/table.phtml:18
 msgid "Memory used"
 msgstr "Mémoire utilisé"
 
-#: unitest/src/UnitTest/Report.phtml:44
+#: _reporter/views/table.phtml:19
 msgid "Peak memory usage"
 msgstr "Pic d'utilisation de mémoire"
+
+#: _reporter/views/menu.phtml:16
+msgid "Toggle navigation"
+msgstr "Basculer le menu"
+
+#: _reporter/views/menu.phtml:22
+msgid "UnitTest for PHP"
+msgstr "Test unitaire pour PHP"
+
+#: _reporter/report/result.phtml:5
+msgid "Test Class name"
+msgstr "Nom de la classe Test"
+
+#: _reporter/report/result.phtml:8
+msgid "Output"
+msgstr "Sortie"
+
+#: _reporter/report/result.phtml:10
+msgid "No output"
+msgstr "Pas de sortie"
+
+#: _reporter/report/result.phtml:12
+msgid "Assertions"
+msgstr "Assertions"
+
+#: _reporter/report/result.phtml:15
+msgid "Status"
+msgstr "Statut"
+
+#: _reporter/report/result.phtml:16
+msgid "Assertion"
+msgstr "Assertion"
+
+#: _reporter/report/result.phtml:17 _reporter/report/result.phtml:38
+msgid "File"
+msgstr "Fichier"
+
+#: _reporter/report/result.phtml:18 _reporter/report/result.phtml:39
+msgid "Line"
+msgstr "Ligne"
+
+#: _reporter/report/result.phtml:19
+msgid "Execution"
+msgstr "Exécution"
+
+#: _reporter/report/result.phtml:25
+msgid "No assertion"
+msgstr "Pas d'assertion"
+
+#: _reporter/report/result.phtml:34
+msgid "Exception"
+msgstr "Exception"
+
+#: _reporter/report/result.phtml:40
+msgid "Code"
+msgstr "Code"

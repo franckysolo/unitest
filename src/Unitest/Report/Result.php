@@ -190,7 +190,6 @@ class Result
     public function getAssertions() {
         return $this->assertions;
     }
-
     
     /**
      * 
@@ -199,5 +198,4 @@ class Result
     public function getFailed() {
         return $this->failed;
     }
- 
 }

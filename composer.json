@@ -1,0 +1,24 @@
+{
+	"name" : "franckysolo/unitest",
+	"description" : "Unit Test for PHP",
+	"type" : "php-unit-test",
+	"license" : "CC BY-SA 3.0",
+	"authors" : [{
+			"name" : "franckysolo",
+			"email" : "franckysolo@gmail.com",
+			"homepage" : "http://franckysolo-productions.com",
+			"role" : "Developer"
+		}
+	],
+	"minimum-stability" : "dev",
+	"require" : {
+		"php" : ">=5.4.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Unitest\\" : "src/Unitest/",
+			"tests\\" : "tests/",
+			"tests\\classes\\" : "tests/classes/"
+		}
+	}
+}

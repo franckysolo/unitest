@@ -28,7 +28,7 @@ class Reporter
      *  
      * @var string
      */
-    protected static $i18nPath = '../languages/';
+    protected static $i18nPath = '../../languages/';
     
 
     /**

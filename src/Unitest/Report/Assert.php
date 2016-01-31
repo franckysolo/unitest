@@ -47,18 +47,18 @@ class Assert
     /**
      * The execution time
      * 
-     * @var string
+     * @var float
      */
     protected $timestamp;
 
 	/**
 	 * Class Constructor
 	 * 
-	 * @param    $label        the label
-	 * @param    $status       the status  
-	 * @param    $file         the file 
-	 * @param    $line         the line 
-	 * @param    $timestamp    the execution time
+	 * @param string    $label        the label
+	 * @param boolean   $status       the status  
+	 * @param string    $file         the file 
+	 * @param int       $line         the line 
+	 * @param float     $timestamp    the execution time
 	 */
 	public function __construct($label, $status, $file, $line, $timestamp)
 	{
@@ -160,7 +160,7 @@ class Assert
     /**
      * Gets the value of timestamp.
      *
-     * @return string
+     * @return float
      */
     public function getTimestamp()
     {
@@ -170,12 +170,12 @@ class Assert
     /**
      * Sets the value of timestamp.
      *
-     * @param string $timestamp the timestamp
+     * @param float $timestamp the timestamp
      * @return Unitest\Report\Assert
      */
     public function setTimestamp($timestamp)
     {
-        $this->timestamp = (string) $timestamp;
+        $this->timestamp = $timestamp;
         return $this;
     }
 }

@@ -6,6 +6,7 @@
  * @author franckysolo <franckysolo@gmail.com>
  */
 namespace Unitest;
+use Unitest\Report\Result;
 /** 
  * @category PHP Unit Test - Simple Unit Test for PHP
  * @version 1.0.0

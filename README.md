@@ -88,3 +88,6 @@ class MyTest extends Test {
     }
 }
 ```
+# HTML Smart Rendering
+
+![Screen shot](/images/screen-shot.png)

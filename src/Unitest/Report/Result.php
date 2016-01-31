@@ -5,7 +5,7 @@
  * @version 1.0.0
  * @author franckysolo <franckysolo@gmail.com>
  */
-namespace Unitest;
+namespace Unitest\Report;
 /** 
  * @category PHP Unit Test - Simple Unit Test for PHP
  * @version 1.0.0

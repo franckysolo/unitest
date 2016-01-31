@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title><?php echo $this->translate('UnitTest for PHP');?></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <?php include 'views/menu.phtml';?>
+    <div class="container">   
+        <?php include 'views/table.phtml';?>
+    	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">  
+        <?php foreach($this->getResults() as $k => $result):?>
+        <?php 
+            $index = 'collapse-' . $k;
+            $heading =  'heading-' . $k;
+        ?>
+            <div class="panel panel-<?php echo $str = ($result->getStatus()) ? 'success' : 'danger';?>"> 
+                <div class="panel-heading">
+                    <h2 class="panel-title">
+                       <a role="button" data-toggle="collapse" data-parent="#accordion" href="<?php echo '#' .$index;?>" aria-expanded="true" aria-controls="<?php echo $index;?>">
+                	   <?php echo $this->filter($result->getTitle());?>
+                	   </a>
+                    </h2>
+                </div> 
+                <div id="<?php echo $index;?>" class="panel-collapse collapse <?php if ($k == 0):?>in<?php endif;?>" role="tabpanel" aria-labelledby="<?php echo $heading;?>">         
+			        <?php $this->renderChild($result, array('script_path' => __DIR__ . '/report'));?>
+			    </div>
+			</div>
+		<?php endforeach;?>    
+		</div>          
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

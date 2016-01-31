@@ -1,0 +1,13 @@
+<?php
+$status = ($this->getStatus()) 
+        ? ' glyphicon-ok-sign text-success' 
+        : ' glyphicon-remove-circle text-danger';
+$file = $this->filter($this->getFile());
+?>
+<tr>
+    <td class="text-center"><span class="glyphicon <?php echo $this->translate($status); ?>"></span></td>       
+    <td><?php echo $this->filter($this->getLabel()); ?></td>    
+    <td><a href="#"><?php echo $file; ?></a></td>
+    <td><?php echo $this->filter($this->getLine()); ?></td>        
+    <td><?php echo round($this->getTimestamp(), 6); ?> ms</td>
+</tr>

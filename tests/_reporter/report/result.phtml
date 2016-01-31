@@ -1,0 +1,43 @@
+<?php
+$assertions = $this->getAssertions();
+?>
+<div class="panel-body">
+	<h3><?php echo $this->translate('Test Class name')?></h3>
+	<em class="object"><?php echo $this->getName();?></em>
+
+	<h3><?php echo $this->translate('Output')?></h3>
+	<div class="well well-sm">
+		<?php echo $this->getOutput() == '' ? $this->translate('No output') : $this->getOutput();?>
+	</div>   	
+	<h3><?php echo $this->translate('Assertions')?></h3>	
+	<table class="table table-bordered table-striped table-condensed">
+        <tr>
+            <th><?php echo $this->translate('Status')?></th>
+            <th><?php echo $this->translate('Assertion')?></th>
+            <th><?php echo $this->translate('File')?></th>
+            <th><?php echo $this->translate('Line')?></th>
+            <th><?php echo $this->translate('Execution')?></th>
+        </tr>	
+        <?php if (empty($assertions)):?>	
+        <tr>
+            <td colspan="5" class="bg-info">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <?php echo $this->translate('No assertion')?>
+            </td>
+        </tr>
+        <?php else:?>	
+    	<?php foreach($assertions as $key => $assertion):?>
+    	<?php $this->renderChild($assertion, array('script_path' => __DIR__));?>
+    	<?php endforeach;?>
+    	<?php endif;?>
+	</table>
+	<h3><?php echo $this->translate('Exception');?></h3>
+	<?php if (null !== $this->getException()):?>
+	<blockquote>	
+	<?php echo $this->getException()->getMessage();?><br>
+	<?php echo $this->translate('File')?> : <em class="text-primary"><?php echo $this->getException()->getFile();?></em><br>
+	<?php echo $this->translate('Line')?> : <var class="text-danger"><?php echo $this->getException()->getLine();?></var><br>
+	<?php echo $this->translate('Code')?> : <var class="text-danger"><?php echo $this->getException()->getCode();?></var>	
+	</blockquote>
+	<?php endif;?>
+</div>

@@ -12,7 +12,7 @@ namespace Unitest;
  * @version 1.0.0
  * @author franckysolo <franckysolo@gmail.com>
  * @license http://creativecommons.org/licenses/by-sa/3.0/  CC BY-SA 3.0
- * @package UnitTest
+ * @package Unitest
  * @filesource  Series.php
  */
 class Series 
@@ -42,11 +42,17 @@ class Series
         foreach ($this->cases as $case) {
             
             $result = $report->newResult($case);
+            
             ob_start(); 
+            
             try {
                 
                 $unitest = new $case($result);
-                $unitest->init();               
+                
+                // Init the test (config)
+                $unitest->init(); 
+                
+                // Run it
                 $unitest->run();
                 
             } catch (\Exception $e) {

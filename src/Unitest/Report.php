@@ -62,7 +62,7 @@ class Report
         $count = 0;
 
         foreach ($this->results as $result) {
-            if ($result->getStatus()) {
+            if (0 === $result->getFailed()) {
                 ++$count;
             }
         }

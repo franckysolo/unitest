@@ -10,6 +10,10 @@
 			"role" : "Developer"
 		}
 	],
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/franckysolo/unitest.git"
+	},
 	"minimum-stability" : "dev",
 	"require" : {
 		"php" : ">=5.4.0"

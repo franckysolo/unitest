@@ -2,7 +2,11 @@
 	"name" : "franckysolo/unitest",
 	"description" : "Unit Test for PHP",
 	"type" : "php-unit-test",
-	"license" : "CC BY-SA 3.0",
+	"license" : "MIT",
+	"keywords" : [
+		"PHP",
+		"Unit Test"
+	],
 	"authors" : [{
 			"name" : "franckysolo",
 			"email" : "franckysolo@gmail.com",
@@ -23,6 +27,11 @@
 			"Unitest\\" : "src/Unitest/",
 			"tests\\" : "tests/",
 			"tests\\classes\\" : "tests/classes/"
+		}
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "0.1.0-dev"
 		}
 	}
 }

@@ -2,16 +2,16 @@
 /**
  * Unitest (PHP Unit Test)
  *
- * @version 1.0.0
+ * @version 0.1.0
  * @author franckysolo <franckysolo@gmail.com>
  */
 namespace Unitest;
 
 /**
  * @category PHP Unit Test - Simple Unit Test for PHP
- * @version 1.0.0
+ * @version  0.1.0
  * @author franckysolo <franckysolo@gmail.com>
- * @license http://creativecommons.org/licenses/by-sa/3.0/  CC BY-SA 3.0
+ * @license MIT
  * @package Unitest
  * @filesource  Series.php
  */

@@ -11,8 +11,9 @@ Unitest is a simple unit test micro-framework for PHP.
 - Xdebug extension active
 
 # Installation
-
-Coming soon...
+```
+composer require franckysolo/unitest
+```
 
 # Usage
 The tests directory in your project will contains all your application tests.  
